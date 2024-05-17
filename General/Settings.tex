@@ -1,0 +1,101 @@
+% Give your report a title
+\newcommand\reporttitle{Modelação de uma Base de Dados}
+
+% Insert course code, name, quartile number and year (or any other subtitle)
+\newcommand\reportsubtitle{
+5410 - Bases de Dados - Conceitos
+}
+
+% Add your group number (for DBL) or any other text.
+% \newcommand\groupnumber{
+% \textbf{Group xx}
+% }
+
+% Insert authors and student numbers here
+\newcommand\reportauthors{
+\vspace{-0.4cm}  
+ \\
+Daniel Quaresma \\
+Lucas Silvestre \\
+João Correia \\
+Vladimiro Bonaparte \\
+}
+
+% Add the name of your tutor (for DBL) or any other text.
+\newcommand\grouptutor{
+\textbf{Formador:}\\
+\vspace{0.05cm}  
+Vitor Custodio
+}
+
+% Date and location (default: current date and Eindhoven)
+\newcommand\placeanddate{
+    \vspace{-0.5cm}
+    \today
+}
+
+% Define color_scheme (color of the TU/e logo). Can be changed to drastically change the look of the template
+\definecolor{color_scheme}{RGB}{8, 163, 227}
+
+% All of the following code can be removed to be left with (close to) default LaTeX behaviour. 
+
+% Sets up hyperlinks in the document to be colored
+\hypersetup{
+    colorlinks=true,
+    linkcolor=color_scheme,
+    urlcolor=color_scheme,
+    citecolor = color_scheme
+    }
+\urlstyle{same} % Defines settings for link and reference formatting
+
+
+% Change bullet style for level 1, 2 and 3 respectively for itemize
+\renewcommand{\labelitemi}{\scriptsize\textcolor{color_scheme}{$\blacksquare$}}% level 1
+\renewcommand{\labelitemii}{\scriptsize\textcolor{color_scheme}{$\square$}}% level 2
+\renewcommand{\labelitemiii}{\textcolor{color_scheme}{$\circ$}}% level 3
+
+% \renewcommand{\labelitemi}{\small\textcolor{color_scheme}{\ding{70}}} % level 1
+% \renewcommand{\labelitemii}{\small\textcolor{color_scheme}{\ding{71}}}% level 2
+% \renewcommand{\labelitemiii}{\tiny\textcolor{color_scheme}{\ding{71}}}% level 3
+
+% Change bullet style for level 1, 2 and 3 respectively for enumerate
+\renewcommand{\labelenumi}{\textbf{\textcolor{color_scheme}{\arabic*.}}}% level 1
+\renewcommand{\labelenumii}{\textbf{\textcolor{color_scheme}{[\alph*]}}}% level 2
+\renewcommand{\labelenumiii}{\textbf{\textcolor{color_scheme}{\roman*.}}}% level 3
+
+% Have reference labels be linked to section (section 3 will have fig. 3.1 etc.)
+\counterwithin{equation}{section} % For equations
+\counterwithin{figure}{section} % For figures
+\counterwithin{table}{section} % For tables
+
+% Creates a beautiful header/footer
+\pagestyle{fancy}
+\setlength{\headheight}{17pt}
+\lhead{\raisebox{-0.1\height}{\includegraphics[height=12pt]{Figures/0. General/atec_2.png}}}
+\rhead{\raisebox{0.05\height}{\reporttitle}}
+\renewcommand{\footrulewidth}{0.4pt}
+\cfoot{Página \thepage}
+
+% Formats section, subsection and subsubsection titles respectively 
+\titleformat{\section}{\sffamily\color{color_scheme}\LARGE\bfseries}{\thesection\enskip\color{gray}\textbar\enskip}{0cm}{} % Formats section titles
+
+\titleformat{\subsection}{\sffamily\color{color_scheme}\large\bfseries}{\thesubsection\enskip\color{gray}\textbar\enskip}{0cm}{} % Formats subsection titles
+
+\titleformat{\subsubsection}{\sffamily\color{color_scheme}\bfseries}{\thesubsubsection\enskip\color{gray}\textbar\enskip}{0cm}{} % Formats subsubsection titles
+
+% Formats captions
+\DeclareCaptionFont{color_scheme}{\color{color_scheme}}
+\captionsetup{labelfont={color_scheme,bf}}
+
+ % Changes font to mlmodern
+% \usepackage{mlmodern}
+
+% Changes font to arial
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Removes indent when starting a new paragraph
+\setlength\parindent{0pt}
+
+% Limits the ToC to sections and subsections (no subsubsec.)
+\setcounter{tocdepth}{2}
