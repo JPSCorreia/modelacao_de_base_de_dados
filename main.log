@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.5.9)  17 MAY 2024 03:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.5.9)  18 MAY 2024 17:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -652,12 +652,16 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@expandcount=\count336
  (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+))) (/usr/share/texmf-dist/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count337
+\cp@tempcnt=\count338
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (./General/Settings.tex
-Package hyperref Info: Option `colorlinks' set `true' on input line 48.
+Package hyperref Info: Option `colorlinks' set `true' on input line 47.
  (/usr/share/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
 ))
@@ -666,7 +670,7 @@ LaTeX Font Info:    Trying to load font information for OT1+phv on input line 4.
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count337
+\l__color_backend_stack_int=\count339
 \l__pdf_internal_box=\box76
 ) (./main.aux)
 \openout1 = `main.aux'.
@@ -691,16 +695,16 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count338
+\scratchcounter=\count340
 \scratchdimen=\dimen318
 \scratchbox=\box77
-\nofMPsegments=\count339
-\nofMParguments=\count340
+\nofMPsegments=\count341
+\nofMParguments=\count342
 \everyMPshowfont=\toks55
-\MPscratchCnt=\count341
+\MPscratchCnt=\count343
 \MPscratchDim=\dimen319
-\MPnumerator=\count342
-\makeMPintoPDFobject=\count343
+\MPnumerator=\count344
+\makeMPintoPDFobject=\count345
 \everyMPtoPDFconversion=\toks56
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -709,6 +713,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen320
+\caption@adjustwidth@linewidth=\dimen321
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
@@ -804,35 +811,35 @@ Package hyperref Info: Link coloring ON on input line 4.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<Figures/0. General/db.png, id=39, 369.38pt x 394.273pt>
+<Figures/0. General/db.png, id=55, 369.38pt x 394.273pt>
 File: Figures/0. General/db.png Graphic file (type png)
 <use Figures/0. General/db.png>
-Package pdftex.def Info: Figures/0. General/db.png  used on input line 11.
+Package pdftex.def Info: Figures/0. General/db.png  used on input line 13.
 (pdftex.def)             Requested size: 92.34477pt x 98.56801pt.
  (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
  (/home/correia/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
  (/home/correia/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<Figures/0. General/atec.png, id=41, 770.88pt x 475.02469pt>
+<Figures/0. General/atec.png, id=57, 770.12718pt x 405.01312pt>
 File: Figures/0. General/atec.png Graphic file (type png)
 <use Figures/0. General/atec.png>
 Package pdftex.def Info: Figures/0. General/atec.png  used on input line 41.
-(pdftex.def)             Requested size: 597.50787pt x 368.19106pt.
-<Figures/0. General/atec_logo_white.png, id=42, 339.2675pt x 149.55875pt>
+(pdftex.def)             Requested size: 597.50787pt x 314.228pt.
+<Figures/0. General/atec_logo_white.png, id=58, 339.2675pt x 149.55875pt>
 File: Figures/0. General/atec_logo_white.png Graphic file (type png)
 <use Figures/0. General/atec_logo_white.png>
-Package pdftex.def Info: Figures/0. General/atec_logo_white.png  used on input line 50.
+Package pdftex.def Info: Figures/0. General/atec_logo_white.png  used on input line 49.
 (pdftex.def)             Requested size: 169.63333pt x 74.77919pt.
  [1
 
@@ -856,7 +863,7 @@ File: omsphv.fd
 LaTeX Font Info:    Font shape `OMS/phv/b/n' in size <17.28> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 1.
 )
-<Figures/0. General/atec_2.png, id=66, 224.84pt x 59.22125pt>
+<Figures/0. General/atec_2.png, id=85, 224.84pt x 59.22125pt>
 File: Figures/0. General/atec_2.png Graphic file (type png)
 <use Figures/0. General/atec_2.png>
 Package pdftex.def Info: Figures/0. General/atec_2.png  used on input line 17.
@@ -869,9 +876,11 @@ l.17 \newpage
               [1 <./Figures/0. General/atec_2.png>] (./Chapters/2. Capitulo.tex
 LaTeX Font Info:    Font shape `OMS/phv/b/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OMS/phv/b/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 5.
 File: Figures/0. General/atec_2.png Graphic file (type png)
 <use Figures/0. General/atec_2.png>
-Package pdftex.def Info: Figures/0. General/atec_2.png  used on input line 17.
+Package pdftex.def Info: Figures/0. General/atec_2.png  used on input line 21.
 (pdftex.def)             Requested size: 45.5573pt x 12.0pt.
  [2])
 File: Figures/0. General/atec_2.png Graphic file (type png)
@@ -893,27 +902,74 @@ File: Figures/0. General/atec_2.png Graphic file (type png)
 <use Figures/0. General/atec_2.png>
 Package pdftex.def Info: Figures/0. General/atec_2.png  used on input line 33.
 (pdftex.def)             Requested size: 45.5573pt x 12.0pt.
- [6] (./main.aux)
+ [6] (./Chapters/Z. Template.tex
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+File: Figures/0. General/atec_2.png Graphic file (type png)
+<use Figures/0. General/atec_2.png>
+Package pdftex.def Info: Figures/0. General/atec_2.png  used on input line 38.
+(pdftex.def)             Requested size: 45.5573pt x 12.0pt.
+ [1]
+<example-image-a.pdf, id=131, 321.2pt x 240.9pt>
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+Package pdftex.def Info: example-image-a.pdf  used on input line 82.
+(pdftex.def)             Requested size: 136.57462pt x 102.43443pt.
+<example-image-b.pdf, id=132, 321.2pt x 240.9pt>
+File: example-image-b.pdf Graphic file (type pdf)
+<use example-image-b.pdf>
+Package pdftex.def Info: example-image-b.pdf  used on input line 89.
+(pdftex.def)             Requested size: 136.57462pt x 102.43443pt.
+<example-image-c.pdf, id=133, 321.2pt x 240.9pt>
+File: example-image-c.pdf Graphic file (type pdf)
+<use example-image-c.pdf>
+Package pdftex.def Info: example-image-c.pdf  used on input line 96.
+(pdftex.def)             Requested size: 136.57462pt x 102.43443pt.
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+Package pdftex.def Info: example-image-a.pdf  used on input line 108.
+(pdftex.def)             Requested size: 136.57462pt x 102.43443pt.
+File: example-image-b.pdf Graphic file (type pdf)
+<use example-image-b.pdf>
+Package pdftex.def Info: example-image-b.pdf  used on input line 115.
+(pdftex.def)             Requested size: 136.57462pt x 102.43443pt.
+File: example-image-c.pdf Graphic file (type pdf)
+<use example-image-c.pdf>
+Package pdftex.def Info: example-image-c.pdf  used on input line 122.
+(pdftex.def)             Requested size: 136.57462pt x 102.43443pt.
+)
+File: Figures/0. General/atec_2.png Graphic file (type png)
+<use Figures/0. General/atec_2.png>
+Package pdftex.def Info: Figures/0. General/atec_2.png  used on input line 37.
+(pdftex.def)             Requested size: 45.5573pt x 12.0pt.
+ [2 </usr/share/texmf-dist/tex/latex/mwe/example-image-a.pdf> </usr/share/texmf-dist/tex/latex/mwe/example-image-b.pdf> </usr/share/texmf-dist/tex/latex/mwe/example-image-c.pdf>] (./Chapters/0. List of symbols.tex)
+File: Figures/0. General/atec_2.png Graphic file (type png)
+<use Figures/0. General/atec_2.png>
+Package pdftex.def Info: Figures/0. General/atec_2.png  used on input line 41.
+(pdftex.def)             Requested size: 45.5573pt x 12.0pt.
+ [3] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FA3FF9DEF6E952DC47D39BE9258AEAEE;1224.
+(rerunfilecheck)             Checksum: 77B77A830A5F4A5B1D3A2F97DD1E9EEC;1833.
  ) 
 Here is how much of TeX's memory you used:
- 29280 strings out of 476056
- 536736 string characters out of 5793067
- 1934187 words of memory out of 5000000
- 50791 multiletter control sequences out of 15000+600000
- 582217 words of font info for 130 fonts, out of 8000000 for 9000
+ 29550 strings out of 476056
+ 541717 string characters out of 5793067
+ 1944187 words of memory out of 5000000
+ 50965 multiletter control sequences out of 15000+600000
+ 588429 words of font info for 174 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 89i,16n,90p,1041b,705s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</home/correia/texmf/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></home/correia/texmf/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on main.pdf (8 pages, 652990 bytes).
+ 89i,16n,90p,1041b,846s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</home/correia/texmf/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></home/correia/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/correia/texmf/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></home/correia/texmf/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on main.pdf (11 pages, 702038 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 45153 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 55952 words of extra memory for PDF output out of 61914 (max. 10000000)
 

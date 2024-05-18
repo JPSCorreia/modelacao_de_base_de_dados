@@ -1,43 +1,42 @@
-% Give your report a title
+% Titulo
 \newcommand\reporttitle{Modelação de uma Base de Dados}
 
-% Insert course code, name, quartile number and year (or any other subtitle)
+% Modulo
 \newcommand\reportsubtitle{
 5410 - Bases de Dados - Conceitos
 }
 
-% Add your group number (for DBL) or any other text.
-% \newcommand\groupnumber{
-% \textbf{Group xx}
-% }
-
-% Insert authors and student numbers here
-\newcommand\reportauthors{
-\vspace{-0.4cm}  
- \\
-Daniel Quaresma \\
-Lucas Silvestre \\
-João Correia \\
-Vladimiro Bonaparte \\
+% Grupo
+\newcommand{\autores}{%
+    \begin{tabular}{@{}l@{}}
+        \textbf{Autores:} \\[0.1em]
+        Daniel Quaresma \\[0.1em]
+        Lucas Silvestre \\[0.1em]
+        João Correia \\[0.1em]
+        Vladimiro Bonaparte
+    \end{tabular}%
 }
 
-% Add the name of your tutor (for DBL) or any other text.
-\newcommand\grouptutor{
-\textbf{Formador:}\\
-\vspace{0.05cm}  
-Vitor Custodio
+% Formador
+\newcommand{\formador}{%
+    \begin{tabular}{@{}l@{}}
+        \textbf{Formador:} \\[0.1em]
+        Vitor Custodio 
+    \end{tabular}%
 }
 
-% Date and location (default: current date and Eindhoven)
+% Curso
+\newcommand{\cursoextenso}{Técnico/a Especialista em Tecnologias e Programação de Sistemas de Informação}
+\newcommand{\curso}{TPSI PL 1223}
+
+% Data e Localidade
 \newcommand\placeanddate{
     \vspace{-0.5cm}
-    \today
+    Palmela, \today
 }
 
-% Define color_scheme (color of the TU/e logo). Can be changed to drastically change the look of the template
+% Color Scheme
 \definecolor{color_scheme}{RGB}{8, 163, 227}
-
-% All of the following code can be removed to be left with (close to) default LaTeX behaviour. 
 
 % Sets up hyperlinks in the document to be colored
 \hypersetup{
@@ -47,7 +46,6 @@ Vitor Custodio
     citecolor = color_scheme
     }
 \urlstyle{same} % Defines settings for link and reference formatting
-
 
 % Change bullet style for level 1, 2 and 3 respectively for itemize
 \renewcommand{\labelitemi}{\scriptsize\textcolor{color_scheme}{$\blacksquare$}}% level 1
@@ -72,7 +70,7 @@ Vitor Custodio
 \pagestyle{fancy}
 \setlength{\headheight}{17pt}
 \lhead{\raisebox{-0.1\height}{\includegraphics[height=12pt]{Figures/0. General/atec_2.png}}}
-\rhead{\raisebox{0.05\height}{\reporttitle}}
+\rhead{\raisebox{0.05\height}{ \reporttitle, \reportsubtitle, Grupo 1}}
 \renewcommand{\footrulewidth}{0.4pt}
 \cfoot{Página \thepage}
 
@@ -86,9 +84,6 @@ Vitor Custodio
 % Formats captions
 \DeclareCaptionFont{color_scheme}{\color{color_scheme}}
 \captionsetup{labelfont={color_scheme,bf}}
-
- % Changes font to mlmodern
-% \usepackage{mlmodern}
 
 % Changes font to arial
 \usepackage{helvet}
