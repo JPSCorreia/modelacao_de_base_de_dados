@@ -22,6 +22,8 @@
 \usepackage{xcolor} % Predefines additional colors and allows user defined colors
 \usepackage{tikz} % Useful for drawing images, used for creating the frontpage
 \usepackage{changepage} % Allows the use of \begin{adjustwidth} and \end{adjustwidth}
+\usepackage{listings} % Allows the use of \begin{lstlisting} and \lstinputlisting
+\usepackage{placeins} % Allows the use of \FloatBarrier
 \usetikzlibrary{positioning} % Additional library for relative positioning 
 \usetikzlibrary{calc} % Additional library for calculating within tikz
 
@@ -34,5 +36,60 @@
 }
 \makeatother
 
+% Define a custom color
+\definecolor{sqlkeywords}{HTML}{08A3E3}
 
+% Defines the language for SQL
+\lstdefinelanguage{SQL}{
+    keywords={
+        SELECT, FROM, WHERE, AND, OR, INSERT, INTO, UPDATE, DELETE, CREATE, TABLE, ALTER, ADD, DROP, COLUMN, INDEX, PRIMARY, KEY, FOREIGN, NOT, NULL, UNIQUE, CHECK, DEFAULT, AS, DISTINCT, JOIN, INNER, LEFT, RIGHT, FULL, ON, GROUP, BY, HAVING, ORDER, LIMIT, OFFSET, UNION, ALL
+    },
+    keywordstyle=\color{sqlkeywords}\bfseries,
+    identifierstyle=\color{black},
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{orange},
+    morecomment=[l][\color{magenta}]{--},
+    morecomment=[s][\color{magenta}]{/*}{*/},
+    morestring=[b]"
+}
 
+% Set the default style for listings
+\lstset{
+    language=SQL,
+    basicstyle=\ttfamily\large,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=10pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    tabsize=1,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    frame=single,
+    rulecolor=\color{black},
+    xleftmargin=0pt, % Remove left margin
+    framexleftmargin=0pt, % Remove frame left margin
+    columns=fullflexible, % Minimize spacing
+    inputencoding=utf8,
+    extendedchars=true,
+    literate=%
+    {é}{{\'e}}1
+    {á}{{\'a}}1
+    {í}{{\'i}}1
+    {ó}{{\'o}}1
+    {ú}{{\'u}}1
+    {ã}{{\~a}}1
+    {õ}{{\~o}}1
+    {ç}{{\c{c}}}1
+    {É}{{\'E}}1
+    {Á}{{\'A}}1
+    {Í}{{\'I}}1
+    {Ó}{{\'O}}1
+    {Ú}{{\'U}}1
+    {Ã}{{\~A}}1
+    {Õ}{{\~O}}1
+    {Ç}{{\c{C}}}1
+}

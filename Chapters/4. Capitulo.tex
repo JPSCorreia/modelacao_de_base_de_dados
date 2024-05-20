@@ -1,2 +1,39 @@
 ﻿\section{Consultas á base de dados} \label{section: Consultas}
-teste
+
+Alguns exemplos de consultas que poderão ser feitas na aplicação:
+
+\begin{itemize}
+  \item \textbf{Registo de Utilizador}\\ 
+  O \texttt{user\_id} é chave primária e será preenchido automaticamente de uma maneira sequencial. O  \texttt{vendor\_id} será inicializado sempre automaticamente como \texttt{NULL} pois quando um utilizador se regista inicialmente é apenas como um utilizador normal e não um vendedor. \texttt{deleted} também é inicializado automaticamente a \texttt{0}.
+  \par
+  Não será necessário armazenar qualquer palavra-passe ou token de autenticação, pois a estratégia de autenticação dos utilizadores será realizada através do \textit{Auth0}, uma plataforma de gestão de autenticação.
+  
+  \vspace{10pt}
+    \begin{lstlisting}
+  -- Exemplo de registo de um utilizador
+  INSERT INTO user (first_name, last_name, email)
+  VALUES ('José', 'Manuel', 'jose.manuel@atec.pt');
+      \end{lstlisting}
+  \item \textbf{Apagar utilizador}\\ 
+      Apagar o utilizador com um certo \texttt{user\_id}. Em vez de utilizarmos \texttt{DELETE FROM}, o campo \texttt{deleted} será definido como \texttt{1}, o que é uma prática mais segura que mantém a integridade dos dados e preserva o histórico.
+      \vspace{10pt}
+      \begin{lstlisting}
+  -- Apagar o utilizador com id igual a 1
+  UPDATE user
+  SET deleted = 1
+  WHERE user_id = 1;        
+        \end{lstlisting}    
+  \item \textbf{Consultar email de todos os vendedores}\\ 
+    Mostrar o \texttt{email} de todos os utilizadores que são vendedores, ou seja, que tenham um \texttt{vendor\_id} definido e que tenham o campo \texttt{deleted} definido como \texttt{0}, ou seja, que não tenham sido apagados.
+    \vspace{10pt}
+    \begin{lstlisting}
+  -- Selecionar email de todos os utilizadores que são vendedores
+  SELECT email FROM user
+  WHERE deleted = 0 AND vendor_id IS NOT NULL;
+      \end{lstlisting}
+\end{itemize}
+
+
+\newpage
+
+TODO: fazer mais esta pagina com consultas
