@@ -31,9 +31,52 @@ Alguns exemplos de consultas que poderão ser feitas na aplicação:
   SELECT email FROM user
   WHERE deleted = 0 AND vendor_id IS NOT NULL;
       \end{lstlisting}
+
+  \item \textbf{Consultar produtos e quais os seus vendedores}\\ 
+    Mostrar o \texttt{product\_name} de todos os produtos e o seu \texttt{store\_name} correspondente.
+    \vspace{10pt}
+    \begin{lstlisting}
+  -- Listar todos os produtos e qual a loja que os vende
+  SELECT product.product_name, store.store_name
+  FROM product
+  INNER JOIN store ON store.store_id = product.store_id;
+      \end{lstlisting}
+
+  \item \textbf{Listar encomendas pertencentes a um utilizador}\\ 
+    Listar todas as encomendas que um utilizador fez, mostrando o \texttt{order\_id}, o \texttt{store\_id}, o\texttt{store\_name}, a data em que foi feita \texttt{created} e o \texttt{status} correspondente. Ordenar essas encomendas por ordem decrescente da mais recente á mais antiga.
+    \vspace{10pt}
+    \begin{lstlisting}
+  -- Listar todas as encomendas do utilizador com id igual a 1
+  SELECT order.order_id, store.store_id, store.store_name, order.created, order.status
+  FROM order
+  INNER JOIN store ON order.order_id = store.store_id
+  WHERE user_id = 1
+  ORDER BY created DESC;
+      \end{lstlisting}
+
+  \item \textbf{Listar encomendas pertencentes a um vendedor}\\ 
+    Listar o número da encomenda \texttt{order\_id}, o nome do comprador \texttt{user.first\_name} e \texttt{user.last\_name}, e a data em que a encomenda foi feita \texttt{created} para todas as encomendas que um vendedor ainda tem para enviar, ou seja, aquelas que têm o \texttt{status} definido como "Em processamento", exibindo-os em ordem do mais antigo ao mais recente.
+      \vspace{10pt}
+      \begin{lstlisting}
+  -- Listar todas as encomendas do vendedor com id igual a 1
+  SELECT order.order_id, user.first_name, user.last_name, order.created
+  FROM order
+  INNER JOIN user ON order.user_id = user.user_id
+  INNER JOIN store ON order.store_id = store.store_id
+  WHERE store.vendor_id = 1 AND order.status = 'Em processamento'
+  ORDER BY order.created ASC;
+        \end{lstlisting}
+
 \end{itemize}
 
 
-\newpage
 
-TODO: fazer mais esta pagina com consultas
+
+
+
+% Consulta de orders  que o vendedor fez e a quem 
+% EXEMPLO de RIGHT JOIN;
+% SELECTuser.user_id, user.first_name, user.last_name, orders.order_id
+% FROM user
+% RIGHT JOIN orders USING (user_id)
+% WHERES  vendor_id =1;

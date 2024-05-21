@@ -67,6 +67,7 @@ Criámos as tabelas tendo em conta as funcionalidades da aplicação:
         \textbf{\color{color_scheme}Nome} & \textbf{\color{color_scheme}Tipo} & \textbf{\color{color_scheme}Atributos} & \textbf{\color{color_scheme}Padrão / Expressão}\\
         \midrule
         \texttt{product\_id} & \texttt{INT} & \texttt{PK - NN - AI} &\\
+        \texttt{store\_id} & \texttt{INT} & \texttt{NN - FK} & \\
         \texttt{product\_name} & \texttt{VARCHAR(100)}  & \texttt{NN}  & \\
         \texttt{description} & \texttt{MEDIUMTEXT}  & \texttt{NN}  & \\
         \texttt{discount} & \texttt{DOUBLE}  & \texttt{NN - UQ}  & \texttt{0.0}\\
@@ -249,6 +250,7 @@ Criámos as tabelas tendo em conta as funcionalidades da aplicação:
         \midrule
         \texttt{order\_id} & \texttt{INT} & \texttt{PK - NN - AI} &\\
         \texttt{user\_id} & \texttt{INT}  & \texttt{NN - FK}  &  \\
+        \texttt{store\_id} & \texttt{INT}  & \texttt{NN - FK}  &  \\
         \texttt{street\_address} & \texttt{VARCHAR(100)}  & \texttt{NN}  & \\
         \texttt{postal\_code} & \texttt{CHAR(8)}  & \texttt{NN}  & \\
         \texttt{city} & \texttt{VARCHAR(100)}  & \texttt{NN}  & \\
