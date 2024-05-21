@@ -1,0 +1,56 @@
+# Ignorar ficheiros gerados pelo LaTeX
+main.aux
+main.out
+main.pdf
+main.synctex.gz
+main.toc
+
+# Ignorar a pasta do Visual Studio
+.vs/
+
+# Ignorar ficheiros de backup do LaTeX
+*.bak
+
+# Ignorar ficheiros temporários e de backup do sistema
+*~
+*.swp
+*.tmp
+
+# Ignorar ficheiros de configuração do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar ficheiros de logs
+*.log
+
+# Ignorar ficheiros e pastas do Node.js
+node_modules/
+
+# Ignorar ficheiros e pastas do IDEs comuns
+.idea/
+*.code-workspace
+
+# Ignorar ficheiros do MacOS
+.DS_Store
+
+# Ignorar ficheiros e pastas do Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignorar pasta de builds
+build/
+dist/
+
+# Ignorar ficheiros do Maven
+target/
+
+# Ignorar ficheiros do npm
+npm-debug.log
+
+# Ignorar ficheiros do Yarn
+yarn-error.log
+
+# Ignorar ficheiros do JetBrains
+.idea/
+*.iml
