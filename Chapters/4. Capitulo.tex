@@ -24,7 +24,7 @@ Alguns exemplos de consultas que poderão ser feitas na aplicação:
   WHERE user_id = 1;        
         \end{lstlisting}    
   \item \textbf{Consultar email de todos os vendedores}\\ 
-    Mostrar o \texttt{email} de todos os utilizadores que são vendedores, ou seja, que tenham um \texttt{vendor\_id} definido e que tenham o campo \texttt{deleted} definido como \texttt{0}, ou seja, que não tenham sido apagados.
+    Listar o \texttt{email} de todos os utilizadores que são vendedores, ou seja, que tenham um \texttt{vendor\_id} definido e que tenham o campo \texttt{deleted} definido como \texttt{0}, ou seja, que não tenham sido apagados.
     \vspace{10pt}
     \begin{lstlisting}
   -- Selecionar email de todos os utilizadores que são vendedores
@@ -33,7 +33,7 @@ Alguns exemplos de consultas que poderão ser feitas na aplicação:
       \end{lstlisting}
 
   \item \textbf{Consultar produtos e quais os seus vendedores}\\ 
-    Mostrar o \texttt{product\_name} de todos os produtos e o seu \texttt{store\_name} correspondente.
+    Listar o \texttt{product\_name} de todos os produtos e o seu \texttt{store\_name} correspondente.
     \vspace{10pt}
     \begin{lstlisting}
   -- Listar todos os produtos e qual a loja que os vende
@@ -43,7 +43,7 @@ Alguns exemplos de consultas que poderão ser feitas na aplicação:
       \end{lstlisting}
 
   \item \textbf{Listar encomendas pertencentes a um utilizador}\\ 
-    Listar todas as encomendas que um utilizador fez, mostrando o \texttt{order\_id}, o \texttt{store\_id}, o\texttt{store\_name}, a data em que foi feita \texttt{created} e o \texttt{status} correspondente. Ordenar essas encomendas por ordem decrescente da mais recente á mais antiga.
+    Listar o número da encomenda \texttt{order\_id}, o número da loja \texttt{store\_id}, o nome da loja \texttt{store\_name}, a data em que foi feita \texttt{created} e o seu estado correspondente \texttt{status}. Ordenar essas encomendas por ordem decrescente da mais recente á mais antiga.
     \vspace{10pt}
     \begin{lstlisting}
   -- Listar todas as encomendas do utilizador com id igual a 1
