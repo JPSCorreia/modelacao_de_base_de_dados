@@ -34,6 +34,12 @@ VALUES
 (5, '456789012'),
 (6, '567890123');
 
+UPDATE user SET vendor_id = 1 WHERE user_id = 1;
+UPDATE user SET vendor_id = 2 WHERE user_id = 2;
+UPDATE user SET vendor_id = 3 WHERE user_id = 3;
+UPDATE user SET vendor_id = 4 WHERE user_id = 4;
+UPDATE user SET vendor_id = 5 WHERE user_id = 5;
+UPDATE user SET vendor_id = 6 WHERE user_id = 6;
 
 #### Mock Data store ####
 INSERT INTO store (vendor_id, store_name, store_phone, store_email, description, profile_picture, street_address, city, postal_code, deleted)
