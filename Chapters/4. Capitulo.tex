@@ -37,20 +37,20 @@ Alguns exemplos de consultas que poderão ser feitas na aplicação:
     \vspace{10pt}
     \begin{lstlisting}
   -- Listar todos os produtos e qual a loja que os vende
-  SELECT product.product_name, store.store_name
-  FROM product
-  INNER JOIN store ON store.store_id = product.store_id;
+  SELECT p.product_name, s.store_name
+  FROM product p
+  INNER JOIN store s ON s.store_id = p.store_id;
       \end{lstlisting}
 
   \item \textbf{Listar encomendas pertencentes a um utilizador}\\ 
     Listar o número da encomenda \texttt{order\_id}, o número da loja \texttt{store\_id}, o nome da loja \texttt{store\_name}, a data em que foi feita \texttt{created} e o seu estado correspondente \texttt{status}. Ordenar essas encomendas por ordem decrescente da mais recente á mais antiga.
     \vspace{10pt}
     \begin{lstlisting}
-  -- Listar todas as encomendas do utilizador com id igual a 1
-  SELECT order.order_id, store.store_id, store.store_name, order.created, order.status
-  FROM order
-  INNER JOIN store ON order.order_id = store.store_id
-  WHERE user_id = 1
+  -- Listar todas as encomendas do utilizador com id igual a 7
+  SELECT o.order_id, s.store_id, s.store_name, o.created, o.status
+  FROM `order` o
+  INNER JOIN store s ON o.store_id = s.store_id
+  WHERE o.user_id = 7
   ORDER BY created DESC;
       \end{lstlisting}
 
@@ -59,12 +59,12 @@ Alguns exemplos de consultas que poderão ser feitas na aplicação:
       \vspace{10pt}
       \begin{lstlisting}
   -- Listar todas as encomendas do vendedor com id igual a 1
-  SELECT order.order_id, user.first_name, user.last_name, order.created
-  FROM order
-  INNER JOIN user ON order.user_id = user.user_id
-  INNER JOIN store ON order.store_id = store.store_id
-  WHERE store.vendor_id = 1 AND order.status = 'Em processamento'
-  ORDER BY order.created ASC;
+  SELECT o.order_id, u.first_name, u.last_name, o.created
+  FROM `order` o
+  INNER JOIN user u ON o.user_id = u.user_id
+  INNER JOIN store s ON o.store_id = s.store_id
+  WHERE s.vendor_id = 1 AND o.status = 'Em processamento'
+  ORDER BY o.created ASC;
         \end{lstlisting}
 
 \end{itemize}
